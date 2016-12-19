@@ -12,8 +12,8 @@ Created by sg11
 
 ##Example Usage:
 ```url
-https://api-proj-sng11.c9users.io/December%2025,%202014 
-https://api-proj-sng11.c9users.io/1419465600
+https://sgtime.azurewebsites.net/December%2025,%202014 
+https://sgtime.azurewebsites.net/1419465600
 ```
 ##Example Output:
 ```json
