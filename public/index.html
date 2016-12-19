@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Timestamp Microservice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .custom-counter {
+        margin-left: 0;
+        padding-right: 0;
+        list-style-type: none;
+        font-size: 110%;
+    }
+    .custom-counter li {
+        counter-increment: step-counter;
+    }
+    .custom-counter li::before {
+        content: counter(step-counter);
+        margin-right: 5px;
+        font-size: 80%;
+        background-color: rgb(200,200,200);
+        color: white;
+        font-weight: bold;
+        padding: 5px 8px;
+        border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+    <div class="jumbotron" style="padding-left: 50px">
+        <h2>
+            Timestamp Microservice API
+            <br><br>
+            <small>
+                Timestamp is a microservice API that accepts a date in Unix or natural language format and returns both the Unix and natural language formats.
+                <br>
+                This app is a project for the Back End Certification on FreeCodeCamp.
+            </small>
+        </h2>
+    </div>
+    <div style="padding-left: 50px">
+        <h3>User Stories</h3>
+        <ol class="custom-counter">
+            <li>
+                 I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+            </li>
+            <br>
+            <li>
+                If it does, it returns both the Unix timestamp and the natural language form of that date.
+            </li>
+            <br>
+            <li>
+                If it does not contain a date or Unix timestamp, it returns null for those properties.
+            </li>
+        </ol>
+        <br>
+        <h3>Example Usage:</h3>
+        <code>https://api-proj-sng11.c9users.io/December%2025,%202014</code>
+        <br>
+        <code>https://api-proj-sng11.c9users.io/1419465600</code>
+        <h3>Example Output:</h3>
+        <code>{"unix":1419465600,"natural":"December 25, 2014"}</code>
+    </div>
+</body>
+
+</html>
+  
